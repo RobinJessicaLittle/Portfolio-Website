@@ -1,0 +1,70 @@
+/*Page Container*/
+.pageContainer{
+    border: 3px solid #FF9900;
+}
+
+/*NAVBAR*/
+.navBarContainer{
+    border: 3px solid #FF0000;
+}
+    .homeBtn{
+        border: 3px solid #FF00C7;
+    }
+    .projectsBtn{
+        border: 3px solid #CC00FF;
+    }
+    .resumeBtn{
+        border: 3px solid #001AFF;
+    }
+    .conactMeBtn{
+        border: 3px solid #00A3FF;
+    }
+    .colorChangeBtn{
+        border: 3px solid #00F0FF;
+    }
+
+
+/*Page Content*/
+
+/*ABOUT*/
+.aboutContainer{
+border: 3px solid #DBFF00;
+}
+    .meImage{
+        border: 3px solid #0F6B00;
+    }
+    .aboutText{
+        border: 3px solid #FF9900;
+    }
+        .title{
+            border: 3px solid #7F1BFF;
+        }
+        .meAbout{
+            border: 3px solid #C0C300;
+        }
+
+/*EXPERIENCE*/
+.experienceContainer{
+border: 3px solid #00A3FF;
+}
+    .experienceTitle{
+        border: 3px solid #FF00C7;
+    }
+    .experienceList{
+        border: 3px solid #815500;
+    }
+
+
+/*Page Footer*/
+.footerContainer{
+    border: 3px solid #9C0000;
+}
+    .githubBtn{
+        border: 3px solid #000AFF;
+    }
+    .linkedinBtn{
+        border: 3px solid #8204FF;
+    }
+    .instagramBtn{
+        border: 3px solid #FF5C00;
+    }
