@@ -225,6 +225,57 @@ margin: 3%;
         word-spacing: 25px;
         font-size: 90%;
     }
+/* PROJECTS */
+
+.projectsContainer:not(footerContainer){
+    /* border: 1px solid rgb(242, 5, 100); */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 2.5%;
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
+
+    .Project{
+        border-radius: 2%;
+        padding: 5px;
+        margin: 5%;
+        -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 9px 0px 16px 11px rgba(0,0,0,0.2); 
+        box-shadow: 2px 5px 16px 0px #0B325E, 9px 0px 16px 11px rgba(0,0,0,0.2);
+
+        
+    }
+
+    .projectsTitle{
+        text-align: center;
+    }
+
+    .projectsText{
+        text-align: center;
+        word-spacing: 2px;
+        font-size: 100%;
+        padding:2%;
+    }
+
+    .projectsLanguages{
+        text-align: center;
+        word-spacing: 15px;
+        font-size: 100%;
+    }
+
+    .projectsLinks{
+    }
+
+    #webProject{
+        width: 6%;
+        margin: 1%;
+    }
+
 
 
 /*Page Footer*/
