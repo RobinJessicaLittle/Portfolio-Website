@@ -12,6 +12,9 @@ const homeBtn = document.getElementById("homeBtn");
 //PROJECTS IMPORTS
 const projectsContainer = document.getElementById("projectsContainer");
 const projectsBtn = document.getElementById("projectsBtn");
+//FORM IMPORTS
+// const sumbitMessage = document.getElementById("sumbitMessage");
+
 
 //CONTACT MODAL
 conactMeBtn.addEventListener("click", () => {
@@ -52,3 +55,27 @@ projectsBtn.addEventListener("click", () =>{
     show(projectsContainer);
     hide(contentContainer);
 })
+
+// sumbitMessage.addEventListener("click", (e) =>{
+//     e.preventDefault()
+//     const name = document.getElementById("name");
+//     const subject = document.getElementById("subject");
+//     const email = document.getElementById("email");
+//     const phone = document.getElementById("phone");
+//     const message = document.getElementById("message");
+//     var body = "name: " +name + "<br/>subject: " +subject +"<br/> email:" 
+//     + email + "<br/> phone:" +phone + "<br/> message:" +message;
+
+    
+//     Email.send({
+//         Host : "smtp.gmail.com",
+//         Username : "robin.jessica.little.95@gmail.com",
+//         Password : "wxjhzfkmhtacomdn",
+//         To : "robin.jessica.little.95@gmail.com",
+//         From : email,
+//         Subject : subject,
+//         Body : body
+//     }).then(
+//       message => alert(message)
+//     );
+// })
