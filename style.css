@@ -120,7 +120,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    
+
     background: rgba(255, 255, 255, 0.36);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(12.3px);
@@ -137,10 +137,40 @@
     }
 
     .resumeModal {
-        background-color: white;
-        margin: 20%;
-        max-width: 100%;
+        background-color: rgb(111, 110, 110);
+        padding:100px;
+        margin: 500%;
+        max-width: 150%;
+        max-height: 150%;
         text-align: center;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; */
+    }
+
+    .resumeTitle{
+        font-size: 30px;
+        width: 300px;
+    }
+    .resumeText{
+        width: 300px;
+        font-size: 20px;
+    }
+    #resumeLink{
+        all:unset;
+    }
+    #resumeButton{
+        margin-bottom:6%;
+        font-size: 120%;
+        width:200px;
+    }
+    #closeResumeModal{
+        width: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 135px;
+        margin-top: 5px;
     }
 
 /*Page Content*/
