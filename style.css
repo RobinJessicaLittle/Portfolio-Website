@@ -1,4 +1,6 @@
-
+.body{
+    min-height: 100vh;
+}
 
 /*NAVBAR*/
 .header{
@@ -276,7 +278,7 @@ margin: 3%;
 
 /*Page Footer*/
 .footerContainer{
-    position:fixed;
+    /* position:fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
