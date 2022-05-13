@@ -288,7 +288,7 @@ margin: 3vw;
 
 #newfooterContainer{
     width: 100%;
-    position: relative;
+    position: sticky;
     bottom: 0;
     clear:both;
 }
@@ -332,10 +332,6 @@ margin: 3vw;
             word-spacing: 5px;
             font-size: 90%;
         }
-        /* .footerContainer{
-        margin-top: 10vh;
-        margin-bottom: 0vh;
-        } */
         .socials{
             width: 80%;
         }
@@ -372,9 +368,6 @@ margin: 3vw;
             word-spacing: 25px;
             margin: 5%;
         }
-        /* .footerContainer{
-            margin-top:35%;
-        } */
         .colorChnge{
             width: 90%;
         }
