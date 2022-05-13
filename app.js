@@ -54,6 +54,8 @@ projectsBtn.addEventListener("click", () =>{
     hide(contentContainer);
 })
 
+
+// PROJECTS COLLAPSIBLE
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
