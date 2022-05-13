@@ -12,7 +12,8 @@ const homeBtn = document.getElementById("homeBtn");
 //PROJECTS IMPORTS
 const projectsContainer = document.getElementById("projectsContainer");
 const projectsBtn = document.getElementById("projectsBtn");
-
+// FOOTER
+const footerContainer = document.getElementById("footerContainer");
 
 //CONTACT MODAL
 conactMeBtn.addEventListener("click", () => {
@@ -45,6 +46,7 @@ hide(projectsContainer)
 //HOME BUTTON
 homeBtn.addEventListener("click", () => {
     show(contentContainer);
+    show(footerContainer)
     hide(projectsContainer);
 })
 
@@ -52,6 +54,7 @@ homeBtn.addEventListener("click", () => {
 projectsBtn.addEventListener("click", () =>{
     show(projectsContainer);
     hide(contentContainer);
+    hide(footerContainer)
 })
 
 
