@@ -64,20 +64,21 @@
 
     .contactModal {
         background-color: rgb(111, 110, 110);
-        padding:5%;
-        margin: 500%;
+        padding:2%;
+        margin: 50%;
         max-width: 150%;
         max-height: 150%;
         text-align: center;
+        border-radius: 2%;
     }
     h3{
-        font-size: 30px;
+        font-size: 150%;
     }
     ::-webkit-input-placeholder{
-        font-size: 16px;
+        font-size: 110%;
     }
     ::-moz-placeholder{
-        font-size: 16px;
+        font-size: 1%;
     }
 
 
@@ -93,7 +94,7 @@
         height: 50%;
         margin-top: 0%;
         margin-bottom:6%;
-        font-size: 120%;
+        font-size: 110%;
 
     }
 
@@ -102,7 +103,7 @@
 #resumeModalContainer{
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content:space-around;
     position: fixed;
     top: 0;
     left: 0;
@@ -126,11 +127,11 @@
 
     .resumeModal {
         background-color: rgb(111, 110, 110);
-        padding:5%;
+        padding:3%;
         margin: 500%;
-        max-width: 150%;
-        max-height: 150%;
         text-align: center;
+        border-radius: 3%;
+        
     }
 
     .resumeTitle{
@@ -139,7 +140,7 @@
     }
     .resumeText{
         width: 100%;
-        font-size: 20px;
+        font-size: 150%;
     }
     #resumeLink{
         all:unset;
@@ -153,7 +154,7 @@
         width: 17%;
         display: flex;
         flex-direction: column;
-        margin-left: 50%;
+        margin-left: 40%;
         margin-right: 50%;
         margin-top: 5%;
     }
@@ -274,7 +275,22 @@ margin: 3vw;
       .active, .collapsible:hover {
         background-color: #555;
       }
+
+      .collapsible:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+      }
       
+      .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+      }
+
+      .content{
+         display:none; 
+      }
 
 
 /*Page Footer*/
@@ -288,9 +304,9 @@ margin: 3vw;
 
 #newfooterContainer{
     width: 100%;
-    position: sticky;
+    position: fixed;
     bottom: 0;
-    clear:both;
+    right: 0;
 }
 
     #githubBtn, #linkedinBtn, #instagramBtn{
@@ -349,6 +365,11 @@ margin: 3vw;
         }
       }
 
+      .form-control{
+        width: 350px;
+    }
+
+
       @media all and (max-width: 500px) {
         #meImage{
             margin-top: 30%;
@@ -374,5 +395,15 @@ margin: 3vw;
         #homeBtn, #projectsBtn, #resumeBtn, #conactMeBtn{
             font-size: 60%;
         }
+      .form-control{
+
+        width: 280px;
+
+      }
+
+      #sumbitMessage{
+        font-size: 80%;
+      }
+
     
     }
