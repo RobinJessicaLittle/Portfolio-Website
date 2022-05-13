@@ -6,160 +6,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfoilo Website</title>
-</head>
-<body>
-<div class = homeContainer>
-<!--Nav Bar-->
-<div class = "header">
-        <div class = "navBarContainer">
-            <button id="homeBtn">Home</button>
-            <button id="projectsBtn">Projects</button>
-            <button id="resumeBtn">Resume</button>
-            <button id="conactMeBtn">Contact</button>
-        </div>
-         <!--Light And Dark Theme Button-->
-         <button id = "colorChangeBtn"><img class= "colorChnge" src="/images/icons8-sun.svg" alt="colorChange"></button> 
-</div>
-<!-- Contact Modal -->
-<div class = "contactModalContainer" id = "contactModalContainer">
-
-    <div class = "contactModal">
-
-          <h3>GET IN TOUCH</h3>
-
-          <form action="https://formsubmit.co/robin.jessica.little.95@gmail.com" method="POST">
-        
-          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-          <input type ="text" name="subject" class="form-control"placeholder="Subject"  required>
-          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-          <input type ="text" name ="phone" class="form-control" placeholder="Your Phone Number" required>
-          <textarea placeholder="Your Message" class="form-control" name="message" rows="16" required></textarea>
-          <button id = "sumbitMessage">Send</button>
-        </form>
-
-        <button id = "closeContactModal">X</button>
-     </div>
-</div>
-
-<!-- Resume Modal -->
-<div class = "resumeModalContainer" id = "resumeModalContainer">
-
-  <div class = "resumeModal">
-
-      <h1 class = "resumeTitle">Resume</h1>
-      <p class = "resumeText">A PDF copy of my work history, education and accomplishments.</p>
-      <button id = "resumeButton"><a id = "resumeLink" href="Resume.pdf" download="robinLittleResume">Click to download</a></button>
-      <!-- <button id = "resume" download src = "Resume.pdf" alt = "Resume Download">CLICK TO DOWNLOAD</button> -->
-      <button id = "closeResumeModal">X</button>
-
-    </div>
-</div>
-
-
-<!--Page Container-->
-<div class="contentContainer" id="contentContainer">
-
-<!--Page Content-->
-
-        <!--ABOUT-->
-        <div class = "aboutContainer">
-
-            <!--Pic of Me-->
-            <img id = "meImage" src = "/images/Portrait.png" alt = "Portrait">
-
-            <!--TEXT-->
-            <div class = "aboutText">
-            <!--Title-->
-            <h1 id = "title"> Robin Little- Aspiring Developer</h1>
-
-            <!--About paragraph-->
-            <p id = "meAbout">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                enim ad minim veniam.enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Portfoilo Website</title>
+    </head>
+    <body>
+    <div class = homeContainer>
+    <!--Nav Bar-->
+    <div class = "header">
+            <div class = "navBarContainer">
+                <button id="homeBtn">Home</button>
+                <button id="projectsBtn">Projects</button>
+                <button id="resumeBtn">Resume</button>
+                <button id="conactMeBtn">Contact</button>
             </div>
-        </div>
-
-        <!--EXPERIENCE-->
-        <div class = "experienceContainer">
-            <!--Title-->
-            <h2 id = "experienceTitle"> I have experience working with:</h1>
+             <!--Light And Dark Theme Button-->
+             <button id = "colorChangeBtn"><img class= "colorChnge" src="/images/icons8-sun.svg" alt="colorChange"></button> 
+    </div>
+    <!-- Contact Modal -->
+    <div class = "contactModalContainer" id = "contactModalContainer">
+    
+        <div class = "contactModal">
+    
+              <h3>GET IN TOUCH</h3>
+    
+              <form action="https://formsubmit.co/robin.jessica.little.95@gmail.com" method="POST">
             
-            <!--Experience List-->
-            <p id = "experienceList">CSS   ★   HTML   ★   JAVASCRIPT   ★   REACT   ★ PYTHON   ★  MONGO-DB   ★   MONGOOSE   ★   SQL   ★   FIGMA   ★   PHOTOSHOP   ★   PREMIER-PRO  </p>
+              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+              <input type ="text" name="subject" class="form-control"placeholder="Subject"  required>
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+              <input type ="text" name ="phone" class="form-control" placeholder="Your Phone Number" required>
+              <textarea placeholder="Your Message" class="form-control" name="message" rows="16" required></textarea>
+              <button id = "sumbitMessage">Send</button>
+            </form>
+    
+            <button id = "closeContactModal">X</button>
+         </div>
+    </div>
+    
+    <!-- Resume Modal -->
+    <div class = "resumeModalContainer" id = "resumeModalContainer">
+    
+      <div class = "resumeModal">
+    
+          <h1 class = "resumeTitle">Resume</h1>
+          <p class = "resumeText">A PDF copy of my work history, education and accomplishments.</p>
+          <button id = "resumeButton"><a id = "resumeLink" href="Resume.pdf" download="robinLittleResume">Click to download</a></button>
+          <!-- <button id = "resume" download src = "Resume.pdf" alt = "Resume Download">CLICK TO DOWNLOAD</button> -->
+          <button id = "closeResumeModal">X</button>
+    
+        </div>
+    </div>
+    
+    
+    <!--Page Container-->
+    <div class="contentContainer" id="contentContainer">
+    
+    <!--Page Content-->
+    
+            <!--ABOUT-->
+            <div class = "aboutContainer">
+    
+                <!--Pic of Me-->
+                <img id = "meImage" src = "/images/Portrait.png" alt = "Portrait">
+    
+                <!--TEXT-->
+                <div class = "aboutText">
+                <!--Title-->
+                <h1 id = "title"> Robin Little- Aspiring Developer</h1>
+    
+                <!--About paragraph-->
+                <p id = "meAbout">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                    enim ad minim veniam.enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+    
+            <!--EXPERIENCE-->
+            <div class = "experienceContainer">
+                <!--Title-->
+                <h2 id = "experienceTitle"> I have experience working with:</h1>
+                
+                <!--Experience List-->
+                <p id = "experienceList">CSS   ★   HTML   ★   JAVASCRIPT   ★   REACT   ★ PYTHON   ★  MONGO-DB   ★   MONGOOSE   ★   SQL   ★   FIGMA   ★   PHOTOSHOP   ★   PREMIER-PRO  </p>
+            </div>
+    
+    <!--Page Container Closing div-->
+    </div>
+    
+    <!--Home Container Closing div-->
+    </div>
+    
+    
+    <!--Footer-->
+    <div class = "footerContainer">
+      <button id = "githubBtn"><img class= "socials" src="/images/icons8-github.svg" alt="gitLink"></button> 
+      <button id = "linkedinBtn"><img class= "socials" src="/images/icons8-linkedin.svg" alt="linkedLink"></button> 
+      <button id = "instagramBtn"><img class= "socials" src="/images/icons8-instagram.svg" alt="instaLink"></button> 
+    
+    </div>
+    
+    <div class= "projectsContainer" id= "projectsContainer">
+
+      <button type="button" class="collapsible">Front End</button>
+      <div class="content">
+        <div class = "Project">
+    
+          <h1 class="projectsTitle">Cyber Pet Project</h1>
+          <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+          <p class ="projectsLanguages"> HTML CSS JAVASCRIPT</p>
+          <div class ="projectsLinks">
+            <a href = "https://robinjessicalittle.github.io/Pet-Game/"><img id= "webProject" src = "/images/programming.png"></a>
+            <a href = "https://github.com/RobinJessicaLittle/Pet-Game"><img id= "gitProject" src = "/images/icons8-github.svg"></a>
+    
+    
+      </div>
+    
+    </div>
+    <div class = "Project">
+    
+      <h1 class="projectsTitle">React To Do App</h1>
+      <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+      <p class ="projectsLanguages"> REACT CSS JAVASCRIPT</p>
+      <div class ="projectsLinks">
+        <a href = "https://6266a06bae12610059f909a0--react-list-app-week6.netlify.app/"><img id= "webProject" src = "/images/programming.png"></a>
+        <a href = "https://github.com/RobinJessicaLittle/React-List-App"><img id= "gitProject" src = "/images/icons8-github.svg"></a>
+    
+    
+    </div>
+    </div>
+    
+    <div class = "Project">
+    
+      <h1 class="projectsTitle">Plant Enclyclopedia</h1>
+      <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+      <p class ="projectsLanguages"> HTML CSS</p>
+      <div class ="projectsLinks">
+        <a href = "https://robinjessicalittle.github.io/House-Plant-Encyclopedia/"><img id= "webProject" src = "/images/programming.png"></a>
+        <a href = "https://github.com/RobinJessicaLittle/House-Plant-Encyclopedia"><img id= "gitProject" src = "/images/icons8-github.svg"></a>
+    
+    
+    </div>
+      </div>
+    </div>
+      <button type="button" class="collapsible">Back End</button>
+      <div class="content">
+
+        <div class = "Project">
+    
+          <h1 class="projectsTitle">Film Database-MongoDB</h1>
+          <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+          <p class ="projectsLanguages"> JAVASCRIPT MONGO-DB</p>
+          <div class ="projectsLinks">
+            <a href = "https://github.com/RobinJessicaLittle/MongoDB-database"><img id= "gitProject" src = "/images/icons8-github.svg"></a>
+        
+        
+        </div>
         </div>
 
-<!--Page Container Closing div-->
-</div>
+        <div class = "Project">
+    
+          <h1 class="projectsTitle">Film Database-Mongoose</h1>
+          <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+          <p class ="projectsLanguages"> JAVASCRIPT MONGOOSE</p>
+          <div class ="projectsLinks">
+            <a href = "https://github.com/RobinJessicaLittle/MongoDB-database"><img id= "gitProject" src = "/images/icons8-github.svg"></a>
+        
+        
+        </div>
+        </div>
 
-<!--Home Container Closing div-->
-</div>
-
-
-<!--Footer-->
-<div class = "footerContainer">
-  <button id = "githubBtn"><img class= "socials" src="/images/icons8-github.svg" alt="gitLink"></button> 
-  <button id = "linkedinBtn"><img class= "socials" src="/images/icons8-linkedin.svg" alt="linkedLink"></button> 
-  <button id = "instagramBtn"><img class= "socials" src="/images/icons8-instagram.svg" alt="instaLink"></button> 
-
-</div>
-
-<!-- Projects -->
-<div class= "projectsContainer" id= "projectsContainer">
-
-  <!-- Cyber Pet -->
-  <div class = "Project">
-
-      <h1 class="projectsTitle">Cyber Pet Project</h1>
-      <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
-      <p class ="projectsLanguages"> HTML CSS JAVASCRIPT</p>
-      <div class ="projectsLinks">
-        <a href = "https://robinjessicalittle.github.io/Pet-Game/"><img id= "webProject" src = "/images/programming.png"></a>
-        <a href = "https://github.com/RobinJessicaLittle/Pet-Game"><img id= "gitProject" src = "/images/icons8-github.svg"></a>
-
-
-  </div>
-
-</div>
-<div class = "Project">
-
-  <h1 class="projectsTitle">React To Do App</h1>
-  <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
-  <p class ="projectsLanguages"> REACT CSS JAVASCRIPT</p>
-  <div class ="projectsLinks">
-    <a href = "https://6266a06bae12610059f909a0--react-list-app-week6.netlify.app/"><img id= "webProject" src = "/images/programming.png"></a>
-    <a href = "https://github.com/RobinJessicaLittle/React-List-App"><img id= "gitProject" src = "/images/icons8-github.svg"></a>
-
-
-</div>
-</div>
-
-<div class = "Project">
-
-  <h1 class="projectsTitle">Plant Enclyclopedia</h1>
-  <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
-  <p class ="projectsLanguages"> HTML CSS</p>
-  <div class ="projectsLinks">
-    <a href = "https://robinjessicalittle.github.io/House-Plant-Encyclopedia/"><img id= "webProject" src = "/images/programming.png"></a>
-    <a href = "https://github.com/RobinJessicaLittle/House-Plant-Encyclopedia"><img id= "gitProject" src = "/images/icons8-github.svg"></a>
-
-
-</div>
-
-
-
-
-    <script src = app.js></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-</body>
-</html>
+        <div class = "Project">
+    
+          <h1 class="projectsTitle">Plant Database-Sequelize</h1>
+          <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+          <p class ="projectsLanguages"> JAVASCRIPT SEQUELIZE</p>
+          <div class ="projectsLinks">
+            <a href = "https://github.com/RobinJessicaLittle/MongoDB-database"><img id= "gitProject" src = "/images/icons8-github.svg"></a>
+        
+        
+        </div>
+        </div>
+      </div>
+      <button type="button" class="collapsible">Full Stack</button>
+      <div class="content">
+        <div class = "Project">
+    
+          <h1 class="projectsTitle">Final Project Code Nation</h1>
+          <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+          <p class ="projectsLanguages"> YET TO BE COMPLETED</p>
+          <div class ="projectsLinks">
+            <a href = ""><img id= "webProject" src = "/images/programming.png"></a>
+            <a href = ""><img id= "gitProject" src = "/images/icons8-github.svg"></a>
+        
+        
+        </div>
+      </div>
+    
+  
+        <script src = app.js></script>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+    </body>
+    </html>
