@@ -4,22 +4,21 @@
 
 /*NAVBAR*/
 .header{
-
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-
 
 }
 .navBarContainer{
     display: flex;
     justify-content: space-around;
     width: 80vh;
+    margin-top: 1%;
+
 }
     #homeBtn, #projectsBtn, #resumeBtn, #conactMeBtn{
         width: 18%;
         height: 50%;
-        margin-top: 0%;
         margin-bottom:6%;
         font-size: 120%
 
@@ -27,14 +26,13 @@
   
     #colorChangeBtn{
         width: 10%;
+        all:unset;
+        margin-top: -1%;
     }
     .colorChnge{
-        width: 50%;
+        width: 100%;
     }
 
-    #colorChnge img{
-      all:unset;  
-    }
 
 /* CONTACT MODAL */
 #contactModalContainer{
@@ -208,8 +206,8 @@ margin: 3vw;
     #experienceList{
         margin: left;
         margin: 1%;
-        word-spacing: 25px;
-        font-size: 90%;
+        word-spacing: 20px;
+        font-size: 100%;
     }
 /* PROJECTS */
 
@@ -239,6 +237,7 @@ margin: 3vw;
 
     .projectsTitle{
         text-align: center;
+        font-size: 150%;
     }
 
     .projectsText{
@@ -256,8 +255,12 @@ margin: 3vw;
 
 
     #webProject{
-        width: 6%;
+        width: 7.5%;
         margin: 1%;
+    }
+    #gitProject{
+        width: 9%;
+        margin-bottom: 0.4%;
     }
 
     .collapsible {
@@ -299,7 +302,6 @@ margin: 3vw;
     width: 100%;
     right: 0;
     bottom: 0;
-    left: 0;
 }
 
 #newfooterContainer{
@@ -309,16 +311,11 @@ margin: 3vw;
     right: 0;
 }
 
-    #githubBtn, #linkedinBtn, #instagramBtn{
+    #socials {
         all:unset;
-    }
-    #githubBtn, #linkedinBtn,#instagramBtn {
         margin: 1%;
-    }
-
-    .socials{
-        width: 110%;
         margin: 5%;
+        stroke: none !important;
     }
 
     @media all and (max-width: 1000px) {
@@ -348,26 +345,25 @@ margin: 3vw;
             word-spacing: 5px;
             font-size: 90%;
         }
-        .socials{
-            width: 80%;
+        .socials img {
+            width: 20%;
         }
-        #githubBtn {
-            margin: 0.5%;
-        }
-        #linkedinBtn{
-            margin: 0.5%;
-        }
-        #instagramBtn{
-            margin: 0.5%;
-        }
+
         #homeBtn, #projectsBtn, #resumeBtn, #conactMeBtn{
             font-size: 80%;
         }
-      }
+    
 
-      .form-control{
-        width: 350px;
-    }
+        .form-control{
+            width: 350px;
+        }
+
+        #webProject{
+            width: 10%;
+        }
+        #gitProject{
+            width: 11.5%;
+        }
 
 
       @media all and (max-width: 500px) {
@@ -385,8 +381,7 @@ margin: 3vw;
             text-align: center;
         }
         #experienceList{
-            font-size:90% ;
-            word-spacing: 25px;
+            font-size:80% ;
             margin: 5%;
         }
         .colorChnge{
@@ -405,5 +400,34 @@ margin: 3vw;
         font-size: 80%;
       }
 
+      #webProject{
+        width: 12%;
+    }
+    #gitProject{
+        width: 14.5%;
+        margin-top: 3%;
+    }
+    .projectsTitle{
+        font-size: 100%;
+    }
+
+    .projectsText{
+        font-size: 80%;
+    }
+
+    .projectsLanguages{
+        font-size: 80%;
+    }
     
     }
+    /* #newfooterContainer{
+        all:unset;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    } */
+}
