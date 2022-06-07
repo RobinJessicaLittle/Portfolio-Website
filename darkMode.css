@@ -1,0 +1,239 @@
+
+
+body.dark{
+    background: black;
+}
+
+#title.dark{
+color: #1BFD9C;
+}
+
+#meAbout.dark{
+    color: white;
+}
+
+#experienceTitle.dark{
+    color: #1BFD9C;
+}
+
+#experienceList.dark{
+    color: white;
+}
+
+#homeBtn.dark, #projectsBtn.dark, #resumeBtn.dark, #conactMeBtn.dark{
+--green: #1BFD9C;
+
+all:unset;
+font-family: 'Rajdhani', sans-serif;
+font-style: bold;
+letter-spacing: 1px;
+font-size: 120%;
+padding: 1%;
+
+ border-radius: 0.6em;
+ overflow: hidden;
+ transition: all 0.3s;
+ line-height: 1.4em;
+ border: 2px solid var(--green);
+ background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+ color: var(--green);
+ box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 12px 3px rgba(27, 253, 156, 0.1);
+}
+
+#homeBtn:hover.dark, #projectsBtn:hover.dark, #resumeBtn:hover.dark, #conactMeBtn:hover.dark {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+    border-radius: 0em;
+   }
+
+#homeBtn:active.dark, #projectsBtn:active.dark, #resumeBtn:active.dark, #conactMeBtn:active.dark{
+    letter-spacing: 4px;
+}
+
+#projectsTitle1.dark{
+    color: white;
+}
+   
+#projectsText1.dark{
+    color: white;
+}
+
+#projectsLanguages1.dark{
+    color: white;
+}
+
+#projectsTitle2.dark{
+    color: white;
+}
+   
+#projectsText2.dark{
+    color: white;
+}
+
+#projectsLanguages2.dark{
+    color: white;
+}
+
+#projectsTitle3.dark{
+    color: white;
+}
+   
+#projectsText3.dark{
+    color: white;
+}
+
+#projectsLanguages3.dark{
+    color: white;
+}
+
+#projectsTitle4.dark{
+    color: white;
+}
+   
+#projectsText4.dark{
+    color: white;
+}
+
+#projectsLanguages4.dark{
+    color: white;
+}
+
+#projectsTitle5.dark{
+    color: white;
+}
+   
+#projectsText5.dark{
+    color: white;
+}
+
+#projectsLanguages5.dark{
+    color: white;
+}
+
+#projectsTitle6.dark{
+    color: white;
+}
+   
+#projectsText6.dark{
+    color: white;
+}
+
+#projectsLanguages6.dark{
+    color: white;
+}
+
+#projectsTitle7.dark{
+    color: white;
+}
+   
+#projectsText7.dark{
+    color: white;
+}
+
+#projectsLanguages7.dark{
+    color: white;
+}
+
+#project1.dark{
+    -webkit-box-shadow: inset 0px 0px 10px 2px #1BFD9C; 
+    box-shadow: inset 0px 0px 10px 2px #1BFD9C;
+
+}
+
+#project2.dark{
+    -webkit-box-shadow: inset 0px 0px 10px 2px #1BFD9C; 
+    box-shadow: inset 0px 0px 10px 2px #1BFD9C;
+}
+
+#project3.dark{
+    -webkit-box-shadow: inset 0px 0px 10px 2px #1BFD9C; 
+    box-shadow: inset 0px 0px 10px 2px #1BFD9C;
+
+}
+
+#project4.dark{
+    -webkit-box-shadow: inset 0px 0px 10px 2px #1BFD9C; 
+    box-shadow: inset 0px 0px 10px 2px #1BFD9C;
+
+}
+
+#project5.dark{
+    -webkit-box-shadow: inset 0px 0px 10px 2px #1BFD9C; 
+    box-shadow: inset 0px 0px 10px 2px #1BFD9C;
+
+}
+
+#project6.dark{
+    -webkit-box-shadow: inset 0px 0px 10px 2px #1BFD9C; 
+    box-shadow: inset 0px 0px 10px 2px #1BFD9C;
+
+}
+
+#project7.dark{
+    -webkit-box-shadow: inset 0px 0px 10px 2px #1BFD9C; 
+    box-shadow: inset 0px 0px 10px 2px #1BFD9C;
+
+}
+
+#project7.dark{
+    -webkit-box-shadow: inset 0px 0px 10px 2px #1BFD9C; 
+    box-shadow: inset 0px 0px 10px 2px #1BFD9C;
+
+}
+
+#collapsible1.dark{
+    background-color:rgb(33, 33, 33);
+}
+
+.active, #collapsible1:hover.dark{
+    background-color:rgb(73, 72, 72);
+}
+
+#collapsible1:after.dark{
+    background-color:rgb(73, 72, 72);
+}
+
+#collapsible2.dark{
+    background-color:rgb(33, 33, 33);
+}
+
+.active, #collapsible2:hover.dark{
+    background-color:rgb(73, 72, 72);
+}
+
+#collapsible2:after.dark{
+    background-color:rgb(73, 72, 72);
+}
+
+#collapsible3.dark{
+    background-color:rgb(33, 33, 33);
+}
+
+.active, #collapsible3:hover.dark{
+    background-color:rgb(73, 72, 72);
+}
+
+#collapsible3:after.dark{
+    background-color:rgb(73, 72, 72);
+}
+
+#resumeModal.dark{
+    background-color: rgb(0, 0, 0);
+    border: 4px solid rgb(255, 255, 255);
+    outline:4px solid rgb(0, 0, 0);
+    color:white;
+
+}
+
+#contactModal.dark{
+    background-color: rgb(0, 0, 0);
+    border: 4px solid rgb(255, 255, 255);
+    outline:4px solid rgb(0, 0, 0);
+    color:white
+}
+
+#footerContainer.dark{
+    background-color: #222222;
+    outline: 3px solid rgb(255, 255, 255);
+    border-top: 6px solid #09ff6b;
+}

@@ -13,6 +13,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="darkMode.css">
         <title>Portfoilo Website</title>
     </head>
     <body>
@@ -21,22 +22,21 @@
 
     <div class = "header">
             <div class = "navBarContainer">
-                <button id="homeBtn">Home</button>
-                <button id="projectsBtn">Projects</button>
-                <button id="resumeBtn">Resume</button>
-                <button id="conactMeBtn">Contact</button>
+                <button class="navBtn" id="homeBtn"><span>Home</span></button>
+                <button class="navBtn" id="projectsBtn"><span>Projects</span></button>
+                <button class="navBtn" id="resumeBtn"><span>Resume</span></button>
+                <button class="navBtn" id="conactMeBtn"><span>Contact</span></button>
             </div>
              <!--Light And Dark Theme Button-->
-             <button id = "colorChangeBtn"><img class= "colorChnge" src="/images/icons8-sun.svg" alt="colorChange"></button> 
+             <button id = "colorChangeBtn"><img class= "colorChnge" src="/images/sun.png" alt="colorChange"></button>
+             <button id = "colorChangeDark"><img class= "colorChnge" src="/images/moon.png" alt="colorChange"></button>  
     </div>
 
-
-<div class = "allContent">
 
       <!-- Contact Modal -->
       <div class = "contactModalContainer" id = "contactModalContainer">
       
-          <div class = "contactModal">
+          <div class = "contactModal" id = "contactModal">
       
                 <h3>GET IN TOUCH</h3>
       
@@ -57,7 +57,7 @@
       <!-- Resume Modal -->
       <div class = "resumeModalContainer" id = "resumeModalContainer">
       
-        <div class = "resumeModal">
+        <div class = "resumeModal" id = "resumeModal">
       
             <h1 class = "resumeTitle">Resume</h1>
             
@@ -80,7 +80,8 @@
               <div class = "aboutContainer">
       
                   <!--Pic of Me-->
-                  <img id = "meImage" src = "images/Portrait.png" alt = "Portrait">
+                  <figure><img id = "meImage" src = "images/Portrait.png" alt = "Portrait"></figure>
+                  
       
                   <!--TEXT-->
                   <div class = "aboutText">
@@ -107,7 +108,7 @@
                   <h2 id = "experienceTitle"> I have experience working with:</h1>
                   
                   <!--Experience List-->
-                  <p id = "experienceList">CSS   ★   HTML   ★   JAVASCRIPT   ★   REACT   ★ PYTHON   ★  MONGO-DB   ★   MONGOOSE   ★   SQL   ★   FIGMA   ★   PHOTOSHOP   ★   PREMIER-PRO  </p>
+                  <p id = "experienceList">CSS&nbsp;★&nbsp;HTML&nbsp;★&nbsp;JAVASCRIPT&nbsp;★&nbsp;REACT&nbsp;★&nbsp;PYTHON&nbsp;★&nbsp;MONGO-DB&nbsp;★&nbsp;MONGOOSE&nbsp;★&nbsp;SQL&nbsp;★&nbsp;FIGMA&nbsp;★ PHOTOSHOP&nbsp;★&nbsp;PREMIER-PRO</p>
               </div>
       
       <!--Page Container Closing div-->
@@ -118,13 +119,13 @@
       
       <div class= "projectsContainer" id= "projectsContainer">
 
-        <button type="button" class="collapsible">Front End</button>
+        <button type="button" class="collapsible" id="collapsible1">Front End</button>
         <div class="content">
-          <div class = "Project">
+          <div class = "Project" id="project1">
       
-            <h1 class="projectsTitle">Cyber Pet Project</h1>
-            <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
-            <p class ="projectsLanguages"> HTML CSS JAVASCRIPT</p>
+            <h1 class="projectsTitle" id="projectsTitle1">Cyber Pet Project</h1>
+            <p class="projectsText" id="projectsText1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+            <p class ="projectsLanguages" id="projectsLanguages1"> HTML CSS JAVASCRIPT</p>
             <div class ="projectsLinks">
               <a href = "https://robinjessicalittle.github.io/Pet-Game/"><img id= "webProject" src = "images/programming.png"></a>
               <a href = "https://github.com/RobinJessicaLittle/Pet-Game"><img id= "gitProject" src = "images/icons8-github.svg"></a>
@@ -133,11 +134,11 @@
         </div>
       
       </div>
-      <div class = "Project">
+      <div class = "Project" id="project2">
       
-        <h1 class="projectsTitle">React To Do App</h1>
-        <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
-        <p class ="projectsLanguages"> REACT CSS JAVASCRIPT</p>
+        <h1 class="projectsTitle" id="projectsTitle2">React To Do App</h1>
+        <p class="projectsText" id="projectsText2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+        <p class ="projectsLanguages" id="projectsLanguages2"> REACT CSS JAVASCRIPT</p>
         <div class ="projectsLinks">
           <a href = "https://6266a06bae12610059f909a0--react-list-app-week6.netlify.app/"><img id= "webProject" src = "images/programming.png"></a>
           <a href = "https://github.com/RobinJessicaLittle/React-List-App"><img id= "gitProject" src = "images/icons8-github.svg"></a>
@@ -146,11 +147,11 @@
       </div>
       </div>
       
-      <div class = "Project">
+      <div class = "Project" id="project3">
       
-        <h1 class="projectsTitle">Plant Enclyclopedia</h1>
-        <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
-        <p class ="projectsLanguages"> HTML CSS</p>
+        <h1 class="projectsTitle" id="projectsTitle3">Plant Enclyclopedia</h1>
+        <p class="projectsText" id="projectsText3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+        <p class ="projectsLanguages" id="projectsLanguages3"> HTML CSS</p>
         <div class ="projectsLinks">
           <a href = "https://robinjessicalittle.github.io/House-Plant-Encyclopedia/"><img id= "webProject" src = "images/programming.png"></a>
           <a href = "https://github.com/RobinJessicaLittle/House-Plant-Encyclopedia"><img id= "gitProject" src = "images/icons8-github.svg"></a>
@@ -159,14 +160,14 @@
       </div>
         </div>
       </div>
-        <button type="button" class="collapsible">Back End</button>
+        <button type="button" class="collapsible" id="collapsible2">Back End</button>
         <div class="content">
 
-          <div class = "Project">
+          <div class = "Project" id="project4">
       
-            <h1 class="projectsTitle">Film Database-MongoDB</h1>
-            <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
-            <p class ="projectsLanguages"> JAVASCRIPT MONGO-DB</p>
+            <h1 class="projectsTitle" id="projectsTitle4">Film Database-MongoDB</h1>
+            <p class="projectsText" id="projectsText4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+            <p class ="projectsLanguages" id="projectsLanguages4"> JAVASCRIPT MONGO-DB</p>
             <div class ="projectsLinks">
               <a href = "https://github.com/RobinJessicaLittle/MongoDB-database"><img id= "gitProject" src = "images/icons8-github.svg"></a>
           
@@ -174,23 +175,23 @@
           </div>
           </div>
 
-          <div class = "Project">
+          <div class = "Project" id="project5">
       
-            <h1 class="projectsTitle">Film Database-Mongoose</h1>
-            <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
-            <p class ="projectsLanguages"> JAVASCRIPT MONGOOSE</p>
-            <div class ="projectsLinks">
+            <h1 class="projectsTitle" id="projectsTitle5">Film Database-Mongoose</h1>
+            <p class="projectsText" id="projectsText5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+            <p class ="projectsLanguages" id="projectsLanguages5"> JAVASCRIPT MONGOOSE</p>
+            <div class ="projectsLinks"> 
               <a href = "https://github.com/RobinJessicaLittle/MongoDB-database"><img id= "gitProject" src = "images/icons8-github.svg"></a>
           
           
           </div>
           </div>
 
-          <div class = "Project">
+          <div class = "Project" id="project6">
       
-            <h1 class="projectsTitle">Plant Database-Sequelize</h1>
-            <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
-            <p class ="projectsLanguages"> JAVASCRIPT SEQUELIZE</p>
+            <h1 class="projectsTitle" id="projectsTitle6">Plant Database-Sequelize</h1>
+            <p class="projectsText" id="projectsText6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+            <p class ="projectsLanguages" id="projectsLanguages6"> JAVASCRIPT SEQUELIZE</p>
             <div class ="projectsLinks">
               <a href = "https://github.com/RobinJessicaLittle/MongoDB-database"><img id= "gitProject" src = "images/icons8-github.svg"></a>
           
@@ -198,13 +199,13 @@
           </div>
           </div>
         </div>
-        <button type="button" class="collapsible">Full Stack</button>
+        <button type="button" class="collapsible" id="collapsible3">Full Stack</button>
         <div class="content">
-          <div class = "Project">
+          <div class = "Project" id="project7">
       
-            <h1 class="projectsTitle">Final Project Code Nation</h1>
-            <p class="projectsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
-            <p class ="projectsLanguages"> YET TO BE COMPLETED</p>
+            <h1 class="projectsTitle" id="projectsTitle7">Final Project Code Nation</h1>
+            <p class="projectsText" id="projectsText7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq </p>
+            <p class ="projectsLanguages" id="projectsLanguages7"> YET TO BE COMPLETED</p>
             <div class ="projectsLinks">
               <a href = ""><img id= "webProject" src = "images/programming.png"></a>
               <a href = ""><img id= "gitProject" src = "images/icons8-github.svg"></a>
@@ -224,7 +225,7 @@
                   <footer id = "footerContainer">
                     <a  href = "https://github.com/RobinJessicaLittle"><img class= "socials" src="images/icons8-github.svg" alt="gitLink"></a>
                     <a href ="https://www.linkedin.com/in/robin-little-655a1b231/"><img class= "socials" src="images/icons8-linkedin.svg" alt="linkedLink"></a> 
-                    <a href = "https://www.instagram.com/little.arty.robin/"><img class= "socials" src="images/icons8-instagram.svg" alt="instaLink"></a> 
+                    <a href = "https://www.instagram.com/little.arty.robin/"><img class= "socials" src="images/icons8-instagram.svg" alt="instaLink"></a>
                   
                   </footer>
    

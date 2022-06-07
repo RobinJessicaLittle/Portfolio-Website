@@ -1,37 +1,78 @@
-.body{
-    min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background: rgb(195,194,193);
+    background: linear-gradient(0deg, rgba(195,194,193,1) 2%, rgba(231,231,231,1) 17%, rgba(252,252,252,1) 26%, rgba(255,255,255,1) 68%, rgba(195,194,193,1) 100%);
+    font-family: 'Montserrat', sans-serif;
+
 }
+
 
 /*NAVBAR*/
 .header{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-
+    width:95%;
 }
 .navBarContainer{
     display: flex;
     justify-content: space-around;
-    width: 80vh;
+    width: 60vw;
+    height: 5vh;
     margin-top: 1%;
-
 }
-    #homeBtn, #projectsBtn, #resumeBtn, #conactMeBtn{
-        width: 18%;
-        height: 50%;
-        margin-bottom:6%;
-        font-size: 120%
-
-    }
-  
-    #colorChangeBtn{
-        width: 10%;
+    .navBtn{
         all:unset;
-        margin-top: -1%;
+        font-family: 'Rajdhani', sans-serif;
+        font-style: bold;
+        letter-spacing: 1px;
+        color: #090909;
+        padding: 1%;
+        font-size: 120%;
+        border-radius: 0.5em;
+        background: #e8e8e8;
+        border: 2px solid #e8e8e8;
+        transition: all .3s;
+        box-shadow: 6px 6px 12px #c5c5c5,
+                    -6px -6px 12px #ffffff;
+       }
+
+    .navBtn:hover{
+        border: 2px solid white;
+    }  
+    
+    .navBtn:active {
+        box-shadow: 4px 4px 12px #c5c5c5,
+        4px -4px 12px #ffffff;
+        letter-spacing: 4px;
+
+       }
+
+
+  
+    #colorChangeBtn, #colorChangeDark{
+        border:none;
+        background-color:transparent;
+        outline:none;
+        margin-top: 1%;
+
     }
     .colorChnge{
-        width: 100%;
+        width: 80%;
     }
+
+    .colorChnge:hover{
+        opacity: 50%;
+    }
+
+    /* #colorChangeDark{
+        width: 20%;
+    } */
 
 
 /* CONTACT MODAL */
@@ -42,8 +83,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     background: rgba(255, 255, 255, 0.36);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -61,7 +102,9 @@
     }
 
     .contactModal {
-        background-color: rgb(111, 110, 110);
+        background-color: rgb(143, 141, 141);
+        border: 4px solid rgb(255, 255, 255);
+        outline:4px solid rgb(0, 0, 0);
         padding:2%;
         margin: 50%;
         max-width: 150%;
@@ -71,6 +114,7 @@
     }
     h3{
         font-size: 150%;
+        text-decoration: underline;
     }
     ::-webkit-input-placeholder{
         font-size: 110%;
@@ -88,17 +132,39 @@
     }
 
     #sumbitMessage{
-        width: 18%;
-        height: 50%;
-        margin-top: 0%;
+        display:flex;
+        align-content: center;
         margin-bottom:6%;
+        width:20%;
+        display: inline-block;
+        position: relative;
+        padding: 10px 25px;
+        background-color: #4CC713;
+        color: white;
+        font-family: sans-serif;
+        text-decoration: none;
+        text-align: center;
+        border: none;
         font-size: 110%;
 
+    }
+    #sumbitMessage:hover{
+        background-color: #45a21a; 
+    }
+
+    #closeContactModal{
+        font-size: 100%;
+        background-color: black;
+        color: white;
+    }
+    #closeContactModal:hover{
+        background-color: rgb(69, 69, 69);
     }
 
 
 /* RESUME MODAL */
 #resumeModalContainer{
+    all:unset;
     display: flex;
     align-items: center;
     justify-content:space-around;
@@ -110,9 +176,9 @@
 
     background: rgba(255, 255, 255, 0.36);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     backdrop-filter: blur(12.3px);
-    -webkit-backdrop-filter: blur(12.3px);
-
+    
     opacity: 0;
     pointer-events: none;
 
@@ -124,43 +190,67 @@
     }
 
     .resumeModal {
-        background-color: rgb(111, 110, 110);
+        width: 100%;
+        background-color: rgb(143, 141, 141);
+        border: 4px solid rgb(255, 255, 255);
+        outline:4px solid rgb(0, 0, 0);
         padding:3%;
         margin: 500%;
         text-align: center;
         border-radius: 3%;
-        
     }
 
     .resumeTitle{
         font-size: 30px;
         width: 100%;
+        text-decoration: underline;
+        
     }
     .resumeText{
         width: 100%;
         font-size: 150%;
+    
     }
     #resumeLink{
-        all:unset;
+        all:unset;  
     }
     #resumeButton{
         margin-bottom:6%;
         font-size: 100%;
         width:100%;
+        display: inline-block;
+        position: relative;
+        padding: 10px 25px;
+        background-color: #4CC713;
+        color: white;
+        font-family: sans-serif;
+        text-decoration: none;
+        font-size: 0.9em;
+        text-align: center;
+        border: none;
     }
+
+    #resumeButton:hover{
+        background-color: #45a21a;
+        color: white;
+    }
+
+
     #closeResumeModal{
-        width: 17%;
-        display: flex;
-        flex-direction: column;
-        margin-left: 40%;
-        margin-right: 50%;
-        margin-top: 5%;
+        font-size: 100%;
+        background-color: black;
+        color: white;
+
+    }
+
+    #closeResumeModal:hover{
+        background-color: rgb(69, 69, 69);
     }
 
 /*Page Content*/
 
 .contentContainer{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-self: stretch;
@@ -173,22 +263,47 @@ display: flex;
 flex-direction: row;
 margin-left: 5vw;
 margin-right: 5vw;
-margin-bottom: 1vh;
+
 }
     #meImage{
-        width: 25%;
-        height: 25%;
+        border: 2px solid white;
+        width: 150%;
         border-radius: 150%;
-        margin: 1%;
+        margin: 10%;
+        margin-top: 100%;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        filter: grayscale(100%);
+        transition: .3s ease-in-out;
     }
+
+    #meImage:hover{
+        filter: grayscale(0);
+    }
+
+    #meImage.show{
+        filter: blur(12.3px);
+        opacity: 0%;
+    }
+
+
     .aboutText{
-        margin: 3%;
+        margin-left: 10%;
+        margin-right: 10% ;
         word-spacing: 5px;
         font-size: 100%;
     }
      #title{
             text-align: center;
+            margin-bottom: 5%;
+            margin-top: 10%;
+            letter-spacing: 5px;
+            transition: .3s ease-in-out;
         }
+
+    #title:hover{
+        letter-spacing: 7px;
+        color: rgb(169, 7, 7);
+    }
         #meAbout{
             text-align: center;
             margin: 1%;
@@ -197,17 +312,20 @@ margin-bottom: 1vh;
 
 /*EXPERIENCE*/
 .experienceContainer{
-margin: 3vw;
+    width: 90%;
+    margin-left: 1%;
 }
     #experienceTitle{
-        margin: 2%;
+        margin-left: 2%;
+        margin-top: 5%;
         font-size: 150%;
+        margin-right: 10%;
+
     }
     #experienceList{
-        margin: left;
-        margin: 1%;
-        word-spacing: 20px;
-        font-size: 100%;
+        margin-left: 2%;
+        word-spacing: 2px;
+        font-size: 120%;
     }
 /* PROJECTS */
 
@@ -219,14 +337,15 @@ margin: 3vw;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    margin-top: 2.5vh;
+    margin-top: 9vh;
+    margin-bottom: 10vh;
     margin-left: 30vw;
     margin-right: 30vw;
 
 }
 
     .Project{
-        border-radius: 2%;
+        border-radius: 5px;
         padding: 5%;
         margin: 5%;
         -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 9px 0px 16px 11px rgba(0,0,0,0.2); 
@@ -249,8 +368,9 @@ margin: 3vw;
 
     .projectsLanguages{
         text-align: center;
-        word-spacing: 2px;
-        font-size: 100%;
+        word-spacing: 10px;
+        font-size: 80%;
+        font-weight: bold;
     }
 
 
@@ -272,7 +392,8 @@ margin: 3vw;
         border: none;
         text-align: left;
         outline: none;
-        font-size: 15px;
+        font-size: 18px;
+        text-align: center;
       }
       
       .active, .collapsible:hover {
@@ -298,24 +419,35 @@ margin: 3vw;
 
 /*Page Footer*/
 #footerContainer{
-    position: absolute;
+    background-color: rgb(219, 216, 216);
+    border-top: 5px solid rgb(255, 255, 255);
+    outline: 3px solid rgb(93, 93, 93);
     width: 100%;
-    right: 0;
+    position: absolute;
     bottom: 0;
+    left: 0;
+    margin-right: 40%;
 }
 
+
 #newfooterContainer{
-    width: 100%;
+    width: 10%;
     position: fixed;
     bottom: 0;
     right: 0;
+
+}
+#newfooterContainer.show{
+    filter: blur(12.3px);
+}
+#footerContainer.show{
+    filter: blur(12.3px);
 }
 
-    #socials {
+    .socials{
         all:unset;
-        margin: 1%;
-        margin: 5%;
-        stroke: none !important;
+        margin: 0.5%;
+        margin-left: 1%;
     }
 
     @media all and (max-width: 1000px) {
@@ -325,9 +457,6 @@ margin: 3vw;
         margin-bottom: 1vh;
         }
 
-        #meImage{
-            margin-top: 7%;
-        }
         .aboutContainer{
             width: 100vw;
         }
@@ -349,27 +478,31 @@ margin: 3vw;
             width: 20%;
         }
 
-        #homeBtn, #projectsBtn, #resumeBtn, #conactMeBtn{
-            font-size: 80%;
+        .header{
+            width:90%;
+        }
+
+        .navBarContainer{
+            width: 80vw;
+        }
+
+        .navBtn{
+            font-size: 85%;
         }
     
-
-        .form-control{
-            width: 350px;
-        }
-
         #webProject{
             width: 10%;
         }
         #gitProject{
             width: 11.5%;
         }
+        /* #colorChangeDark{
+            width: 50%;
+        } */
 
 
-      @media all and (max-width: 500px) {
-        #meImage{
-            margin-top: 30%;
-        }
+      @media all and (max-width: 700px) {
+
         #title{
             font-size: 120%
         }
@@ -384,17 +517,20 @@ margin: 3vw;
             font-size:80% ;
             margin: 5%;
         }
-        .colorChnge{
-            width: 90%;
-        }
-        #homeBtn, #projectsBtn, #resumeBtn, #conactMeBtn{
-            font-size: 60%;
-        }
-      .form-control{
 
-        width: 280px;
+        .navBarContainer{
+            width: 300vw;
+        }
 
-      }
+        .navBtn{
+            font-size: 70%;
+        }
+      /* .colorChnge{
+        width: 40%;
+    }
+    #colorChangeDark{
+        width: 80%;
+    } */
 
       #sumbitMessage{
         font-size: 80%;
