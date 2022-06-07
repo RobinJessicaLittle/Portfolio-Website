@@ -184,6 +184,8 @@ colorChangeBtn.addEventListener("click", () => {
     collapsible1.classList.add("dark");
     collapsible2.classList.add("dark");
     collapsible3.classList.add("dark");
+    //contact
+    contactModal.classList.add("dark");
     //resume 
     resumeModal.classList.add("dark");
     //footer
