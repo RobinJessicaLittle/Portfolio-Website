@@ -70,10 +70,6 @@ body{
         opacity: 50%;
     }
 
-    /* #colorChangeDark{
-        width: 20%;
-    } */
-
 
 /* CONTACT MODAL */
 #contactModalContainer{
@@ -176,6 +172,7 @@ body{
 
     background: rgba(255, 255, 255, 0.36);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(12.3px);
     overflow: hidden;
     backdrop-filter: blur(12.3px);
     
@@ -254,7 +251,6 @@ body{
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    margin-top: 2vh;
   }
 
 /*ABOUT*/
@@ -290,12 +286,16 @@ margin-right: 5vw;
         margin-left: 10%;
         margin-right: 10% ;
         word-spacing: 5px;
+        margin-top: 5%;
+        padding: 2%;
         font-size: 100%;
+        background-color: rgba(0, 0, 0, 0.161);
+        border: 3px solid rgba(0, 0, 0, 0.428);
+        border-radius: 10px;
     }
      #title{
             text-align: center;
             margin-bottom: 5%;
-            margin-top: 10%;
             letter-spacing: 5px;
             transition: .3s ease-in-out;
         }
@@ -305,26 +305,36 @@ margin-right: 5vw;
         color: rgb(169, 7, 7);
     }
         #meAbout{
-            text-align: center;
             margin: 1%;
             font-size: 125%;
         }
 
 /*EXPERIENCE*/
 .experienceContainer{
-    width: 90%;
+    width: 95%;
     margin-left: 1%;
+    background-color: rgba(0, 0, 0, 0.161);
+    border: 3px solid rgba(0, 0, 0, 0.428);
+    border-radius: 10px;
+    margin-top: 3%;
 }
     #experienceTitle{
+        letter-spacing: 2px;
         margin-left: 2%;
-        margin-top: 5%;
         font-size: 150%;
         margin-right: 10%;
+        text-decoration-line: underline;
 
     }
+
+    #experienceTitle:hover{
+        color: rgb(169, 7, 7);
+    }
+
     #experienceList{
         margin-left: 2%;
-        word-spacing: 2px;
+        margin-right: 2%;
+        word-spacing: 15px;
         font-size: 120%;
     }
 /* PROJECTS */
@@ -339,8 +349,10 @@ margin-right: 5vw;
     align-content: center;
     margin-top: 9vh;
     margin-bottom: 10vh;
-    margin-left: 30vw;
-    margin-right: 30vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border: solid 5px rgba(0, 0, 0, 0.378);
+    outline:solid 5px rgba(0, 0, 0, 0.63);
 
 }
 
@@ -369,19 +381,41 @@ margin-right: 5vw;
     .projectsLanguages{
         text-align: center;
         word-spacing: 10px;
-        font-size: 80%;
+        font-size: 120%;
         font-weight: bold;
     }
 
 
     #webProject{
-        width: 7.5%;
+        width: 5%;
         margin: 1%;
+        transition: .1s ease-in-out;
     }
     #gitProject{
-        width: 9%;
-        margin-bottom: 0.4%;
+        width: 4.5%;
+        margin: 1%;
+        transition: .1s ease-in-out;
     }
+
+
+#gitProject:hover{
+    opacity:50%;
+    
+}
+
+#gitProjects:active{
+    width: 2.6%; 
+}
+
+#webProject:hover{
+    opacity:50%;
+    
+}
+
+#webProject:active{
+    width: 2.6%; 
+}
+
 
     .collapsible {
         background-color: #777;
@@ -423,18 +457,20 @@ margin-right: 5vw;
     border-top: 5px solid rgb(255, 255, 255);
     outline: 3px solid rgb(93, 93, 93);
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
-    margin-right: 40%;
 }
 
 
 #newfooterContainer{
-    width: 10%;
+    width: 12%;
     position: fixed;
     bottom: 0;
     right: 0;
+    margin-right: -5%;
+    display: flex;
+    flex-direction: column;
 
 }
 #newfooterContainer.show{
@@ -444,13 +480,35 @@ margin-right: 5vw;
     filter: blur(12.3px);
 }
 
-    .socials{
+    .socials {
         all:unset;
         margin: 0.5%;
-        margin-left: 1%;
+        margin-left: 3%;
+        padding: 1%;
+        width: 2.5%;
+        transition: .1s ease-in-out;
+    }
+
+    .socials:hover{
+        opacity:50%;
+        
+    }
+
+    .socials:active{
+        width: 2.6%; 
+    }
+
+
+    .socialsNew{
+        all:unset;
+        margin: 5%;
+        width: 20%;
     }
 
     @media all and (max-width: 1000px) {
+        #title{
+            font-size: 120%
+        }
         .aboutContainer{
         margin-left: 0vw;
         margin-right: 5vw;
@@ -463,19 +521,30 @@ margin-right: 5vw;
         #meAbout{
             font-size: 100%;
         }
+        #experienceTitle{
+            font-size: 120%
+        }
         .experienceContainer{
             margin-left: 0.5vw;
             margin-right: 0.5vw;
-            margin-top: 5vh;;
+            margin-top: 3vh;
+            margin-bottom: 10%;
             }
         #experienceList{
             margin: left;
-            margin: 0.5%;
             word-spacing: 5px;
             font-size: 90%;
+            
         }
-        .socials img {
-            width: 20%;
+        .projectsLanguages{
+            font-size: 100%;
+        }
+
+        .socials {
+            width: 4%;
+        }
+        .socialsNew{
+            width: 30%;
         }
 
         .header{
@@ -491,31 +560,38 @@ margin-right: 5vw;
         }
     
         #webProject{
-            width: 10%;
+            width: 8%;
         }
         #gitProject{
-            width: 11.5%;
+            width: 7.5%;
         }
-        /* #colorChangeDark{
-            width: 50%;
-        } */
 
 
-      @media all and (max-width: 700px) {
+      @media all and (max-width: 500px) {
 
         #title{
-            font-size: 120%
+            font-size: 90%
+        }
+
+        #meImage{
+            width: 200%;
+            margin-top:200%;
         }
         #meAbout{
-            font-size: 75%;
+            font-size: 70%;
+        }          
+        .experienceContainer{
+            width: 95%;
+            margin-left: 0.5%;
+            margin-top: 5%;
         }
         #experienceTitle{
-            font-size: 120%;
-            text-align: center;
+            font-size: 100%;
+            letter-spacing: 0%;
         }
         #experienceList{
-            font-size:80% ;
-            margin: 5%;
+            font-size:70% ;
+            margin: 1%;
         }
 
         .navBarContainer{
@@ -525,24 +601,19 @@ margin-right: 5vw;
         .navBtn{
             font-size: 70%;
         }
-      /* .colorChnge{
-        width: 40%;
-    }
-    #colorChangeDark{
-        width: 80%;
-    } */
+
 
       #sumbitMessage{
         font-size: 80%;
       }
 
       #webProject{
-        width: 12%;
+        width: 9%;
     }
     #gitProject{
-        width: 14.5%;
-        margin-top: 3%;
+        width: 8.5%;
     }
+
     .projectsTitle{
         font-size: 100%;
     }
@@ -554,16 +625,14 @@ margin-right: 5vw;
     .projectsLanguages{
         font-size: 80%;
     }
+    .socials {
+        width: 5%;
+    }
+    .colorChnge{
+        width: 150%;
+    }
+
+
     
     }
-    /* #newfooterContainer{
-        all:unset;
-        width: 100%;
-        bottom: 0;
-        right: 0;
-        height: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    } */
-}
+    }
