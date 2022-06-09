@@ -9,6 +9,16 @@ const closeResumeModal = document.getElementById("closeResumeModal");
 //HOME PAGE IMPORTS
 const contentContainer = document.getElementById("contentContainer");
 const homeBtn = document.getElementById("homeBtn");
+//about
+const meAbout = document.getElementById("meAbout");
+const meAbout2 = document.getElementById("meAbout2");
+const meAbout3 = document.getElementById("meAbout3");
+const Hobbies = document.getElementById("Hobbies");
+const Background = document.getElementById("Background");
+const aboutBtn = document.getElementById("aboutBtn");
+const hobbiesBtn = document.getElementById("HobbiesBtn");
+const backgroundBtn = document.getElementById("background");
+
 //PROJECTS IMPORTS
 const projectsContainer = document.getElementById("projectsContainer");
 const projectsBtn = document.getElementById("projectsBtn");
@@ -23,7 +33,6 @@ const colorChangeBtn = document.getElementById("colorChangeBtn");
 const colorChangeDark = document.getElementById("colorChangeDark");
 
 const titleChangeBtn = document.getElementById("titleChangeBtn");
-const meAbout = document.getElementById("meAbout");
 const experienceTitle = document.getElementById("experienceTitle")
 const experienceList = document.getElementById("experienceList");
 //projects page
@@ -101,12 +110,36 @@ const show = (i)=>{
 // HIDE
 hide(projectsContainer)
 hide(colorChangeDark)
+// hide(Hobbies)
+// hide(Background)
+// hide(meAbout)
+
+//ABOUT BUTTON
+// aboutBtn.addEventListener("click", () => {
+//   show(meAbout);
+//   hide(Hobbies);
+//   hide(Background);
+//   console.log("test")
+// })
+// //HOBBIES BUTTON
+// hobbiesBtn.addEventListener("click", () => {
+//   show(Hobbies);
+//   hide(meAbout);
+//   hide(Background);
+//   console.log("test2")
+// })
+// //BACKGROUD BUTTON
+// backgroundBtn.addEventListener("click", () => {
+//   show(Background);
+//   hide(meAbout);
+//   hide(Background);
+// })
 
 //HOME BUTTON
 homeBtn.addEventListener("click", () => {
-    show(contentContainer);
-    show(footerContainer)
-    hide(projectsContainer);
+  show(contentContainer);
+  show(footerContainer)
+  hide(projectsContainer);
 })
 
 //PROJECTS BUTTON
@@ -143,6 +176,8 @@ colorChangeBtn.addEventListener("click", () => {
   //homepage
     title.classList.add("dark");
     meAbout.classList.add("dark");
+    meAbout2.classList.add("dark");
+    meAbout3.classList.add("dark");
     experienceTitle.classList.add("dark");
     experienceList.classList.add("dark");
     //navbar
@@ -201,6 +236,8 @@ colorChangeDark.addEventListener("click", () => {
   //home
     title.classList.remove("dark");
     meAbout.classList.remove("dark");
+    meAbout2.classList.remove("dark");
+    meAbout3.classList.remove("dark");
     experienceTitle.classList.remove("dark");
     experienceList.classList.remove("dark");
   //navbar

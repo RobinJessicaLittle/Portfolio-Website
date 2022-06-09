@@ -250,6 +250,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
 /*ABOUT*/
@@ -262,10 +263,10 @@ margin-right: 5vw;
 }
     #meImage{
         border: 2px solid white;
-        width: 150%;
+        width: 100%;
         border-radius: 150%;
         margin: 10%;
-        margin-top: 100%;
+        margin-top: 30%;
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         filter: grayscale(100%);
         transition: .3s ease-in-out;
@@ -283,19 +284,25 @@ margin-right: 5vw;
 
     .aboutText{
         margin-left: 10%;
-        margin-right: 10% ;
+        margin-right: 10%;
         word-spacing: 5px;
         margin-top: 5%;
+        
         padding: 2%;
-        font-size: 100%;
         background-color: rgba(0, 0, 0, 0.161);
         border: 3px solid rgba(0, 0, 0, 0.428);
         border-radius: 10px;
+
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        
     }
      #title{
             text-align: center;
             margin-bottom: 5%;
             letter-spacing: 5px;
+            font-size: 180%;
             transition: .3s ease-in-out;
         }
 
@@ -307,6 +314,22 @@ margin-right: 5vw;
             margin: 1%;
             font-size: 125%;
         }
+        #meAbout2{
+            margin: 1%;
+            font-size: 125%;
+        }
+        #meAbout3{
+            margin: 1%;
+            font-size: 125%;
+        }
+        #Hobbies{
+            margin: 1%;
+            font-size: 100%;
+        }
+        #Background{
+            margin: 1%;
+            font-size: 100%;
+        }
 
 /*EXPERIENCE*/
 .experienceContainer{
@@ -315,7 +338,7 @@ margin-right: 5vw;
     background-color: rgba(0, 0, 0, 0.161);
     border: 3px solid rgba(0, 0, 0, 0.428);
     border-radius: 10px;
-    margin-top: 3%;
+    margin-top: 5%;
 }
     #experienceTitle{
         letter-spacing: 2px;
@@ -332,9 +355,9 @@ margin-right: 5vw;
 
     #experienceList{
         margin-left: 2%;
-        margin-right: 2%;
+        margin-right: 0.5%;
         word-spacing: 15px;
-        font-size: 120%;
+        font-size: 105%;
     }
 /* PROJECTS */
 
@@ -350,8 +373,17 @@ margin-right: 5vw;
     margin-bottom: 10vh;
     margin-left: 20vw;
     margin-right: 20vw;
-    border: solid 5px rgba(0, 0, 0, 0.378);
-    outline:solid 5px rgba(0, 0, 0, 0.63);
+}
+
+#projectsHeader{
+    background-color: rgb(78, 78, 78);
+    color: rgb(255, 255, 255);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
 
 }
 
@@ -423,7 +455,6 @@ margin-right: 5vw;
         padding: 2%;
         width: 100%;
         border: none;
-        text-align: left;
         outline: none;
         font-size: 18px;
         text-align: center;
@@ -520,6 +551,12 @@ margin-right: 5vw;
         #meAbout{
             font-size: 100%;
         }
+        #meAbout2{
+            font-size: 100%;
+        }
+        #meAbout3{
+            font-size: 100%;
+        }
         #experienceTitle{
             font-size: 120%
         }
@@ -534,6 +571,9 @@ margin-right: 5vw;
             word-spacing: 5px;
             font-size: 90%;
             
+        }
+        #projectsHeader{
+            font-size: 15px;
         }
         .projectsLanguages{
             font-size: 100%;
@@ -573,11 +613,17 @@ margin-right: 5vw;
         }
 
         #meImage{
-            width: 200%;
-            margin-top:200%;
+            width: 130%;
+            margin-top:100%;
             margin-left: -15%;
         }
         #meAbout{
+            font-size: 70%;
+        }
+        #meAbout2{
+            font-size: 70%;
+        } 
+        #meAbout3{
             font-size: 70%;
         }          
         .experienceContainer{
