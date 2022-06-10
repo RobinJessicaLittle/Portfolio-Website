@@ -619,10 +619,14 @@ margin-right: 5vw;
         }
         .aboutText{
             margin-top: 1%;
+            width: 90%;
+            margin-right: 12%;
+            /* padding: 10% */
         }
 
         #title{
-            font-size: 80%
+            font-size: 100%;
+            width: 105%;
         }
 
         #meImage{
@@ -632,13 +636,16 @@ margin-right: 5vw;
             margin-left: 35%
         }
         #meAbout{
-            font-size: 70%;
+            font-size: 80%;
+            padding-left: 2%;
         }
         #meAbout2{
-            font-size: 70%;
+            font-size: 80%;
+            padding-left: 2%;
         } 
         #meAbout3{
-            font-size: 70%;
+            font-size: 80%;
+            padding-left: 2%;
         }          
         .experienceContainer{
             width: 95%;
@@ -650,10 +657,12 @@ margin-right: 5vw;
             letter-spacing: 0%;
         }
         #experienceList{
-            font-size:60% ;
+            font-size:70% ;
             margin: 1%;
             margin-right: 0%;
             padding:2%;
+            font-family: 'Montserrat:wght@600', sans-serif;
+            color: #3c3b3b;
         }
 
         .navBarContainer{
