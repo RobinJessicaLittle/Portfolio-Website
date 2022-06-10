@@ -534,6 +534,7 @@ margin-right: 5vw;
     }
 
     @media all and (max-width: 1000px) {
+
         #title{
             font-size: 120%
         }
